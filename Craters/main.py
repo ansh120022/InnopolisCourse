@@ -33,9 +33,10 @@ def find_crater(matrix: np.ndarray, i: int, j: int) -> bool:
     return crater
 
 
-def calculate(array: np.ndarray) -> int:
+def calculate(array: list) -> int:
     """Учёт найденных кратеров."""
     craters = 0
+    array = np.asarray(array)
     for i in range(array.shape[1]):
         for j in range(array.shape[0]):
             if find_crater(array, i, j):
