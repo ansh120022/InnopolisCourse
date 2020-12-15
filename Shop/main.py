@@ -68,7 +68,7 @@ create_query = '''create table if not exists goods
                         location varchar not null, amount int not null);
                         
                         COMMENT on column goods.id IS 'уникальный идентификатор товара';
-                        COMMENT on column goods.name IS 'аименование товара';
+                        COMMENT on column goods.name IS 'наименование товара';
                         COMMENT on column goods.package_height IS 'высота упакованного товара';
                         COMMENT on column goods.package_width IS 'ширина упакованного товара';
                         COMMENT on column shops_goods.id IS 'идентификатор записи';
