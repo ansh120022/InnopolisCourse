@@ -42,17 +42,13 @@ def prepare_tuple(input_dict: dict) -> tuple:
         if isinstance(value, dict):
             sub_element = value
             for sub_key, sub_value in sub_element.items():
-                if sub_key == "width":
-                    goods.append(sub_value)
-                if sub_key == "height":
+                if sub_key in ["width", "height"]:
                     goods.append(sub_value)
         if isinstance(value, list):
             for i in range(len(value)):
                 sub_element = value[i]
                 for sub_key, sub_value in sub_element.items():
-                    if sub_key == "location":
-                        shops_goods.append(sub_value)
-                    if sub_key == "amount":
+                    if sub_key in ["location", "amount"]:
                         shops_goods.append(sub_value)
     return tuple(goods), tuple(shops_goods)
 
