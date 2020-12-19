@@ -45,8 +45,7 @@ def prepare_tuple(input_dict: dict) -> tuple:
                 if sub_key in ["width", "height"]:
                     goods.append(sub_value)
         if isinstance(value, list):
-            for i in range(len(value)):
-                sub_element = value[i]
+            for sub_element in value:
                 for sub_key, sub_value in sub_element.items():
                     if sub_key in ["location", "amount"]:
                         shops_goods.append(sub_value)
