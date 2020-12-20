@@ -1,0 +1,14 @@
+{
+   "id":12,
+   "name":"Телевизор",
+   "package_params":{
+      "width":150,
+      "height":1
+   },
+   "location_and_quantity":[
+      {
+         "location":"Магазин у Ленина",
+         "amount":15
+      }
+   ]
+}

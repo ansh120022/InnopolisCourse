@@ -1,0 +1,7 @@
+config.py:4: error: Function is missing a type annotation
+    def config(filename='database.ini', section='postgresql'):
+    ^
+main.py:98: error: Call to untyped function "config" in typed context
+            params = config()
+                     ^
+Found 2 errors in 2 files (checked 2 source files)
