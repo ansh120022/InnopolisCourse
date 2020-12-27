@@ -56,13 +56,13 @@ def get_resource(item: Dict) -> Optional[int]:
 
 
 def calculate(available_ingredients_list: list) -> List:
-    conveyor_resource = itertools.groupby(available_ingredients_list, get_resource)
+    ingredients = itertools.groupby(available_ingredients_list, get_resource)
     coffee_beans_we_have = {}  # виды кофе
     water_we_have = {}  # Виды воды
     milk_we_have = {}  # Виды молока
     syrups_we_have = {}  # Виды сиропов
     instructions = list()  # все инструкции
-    for key, group in conveyor_resource:
+    for key, group in ingredients:
         for resource in group:
             if resource.get("тип") == "кофе" and (resource.get('количество') // resource.get('порция')) >= 1:
                 coffee_beans_we_have[resource.get("ресурс")] = "кофе"
