@@ -64,13 +64,13 @@ def calculate(available_ingredients_list: list) -> List:
     instructions = list()  # все инструкции
     for key, group in conveyor_resource:
         for resource in group:
-            if resource.get("тип") == "кофе" and (resource.get('количество') // resource.get('порция')) > 1:
+            if resource.get("тип") == "кофе" and (resource.get('количество') // resource.get('порция')) >= 1:
                 coffee_beans_we_have[resource.get("ресурс")] = "кофе"
-            if resource.get("тип") == "вода" and (resource.get('количество') // resource.get('порция')) > 1:
+            if resource.get("тип") == "вода" and (resource.get('количество') // resource.get('порция')) >= 1:
                 water_we_have[resource.get("ресурс")] = "вода"
-            if resource.get("тип") == "молоко" and (resource.get('количество') // resource.get('порция')) > 1:
+            if resource.get("тип") == "молоко" and (resource.get('количество') // resource.get('порция')) >= 1:
                 milk_we_have[resource.get("ресурс")] = "молоко"
-            if resource.get("тип") == "сироп" and (resource.get('количество') // resource.get('порция')) > 1:
+            if resource.get("тип") == "сироп" and (resource.get('количество') // resource.get('порция')) >= 1:
                 syrups_we_have[resource.get("ресурс")] = "сироп"
 
     # Инструкции по созданию кофе без добавок
