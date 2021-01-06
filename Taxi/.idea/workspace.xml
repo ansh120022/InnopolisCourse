@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="073b7afb-a200-4a19-affc-1d67959af086" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ValidAll/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Craters/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Craters/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Knight vs Monster  2/gamers_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Knight vs Monster  2/gamers_builder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shop/database.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../Shop/database.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Shop/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Shop/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assessment/Задание 1/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../assessment/Задание 1/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attestation_desigh_patterns/adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attestation_desigh_patterns/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attestation_desigh_patterns/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attestation_desigh_patterns/Задание 1/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../attestation_desigh_patterns/Задание 1/readme.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/unotux/InnopolisCourse" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1mPjLLFmGGtEassbLb5FfW1bB7S" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/toxexample" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PythonHomework\Taxi\toxexample" />
+      <recent name="C:\PythonHomework\Taxi" />
+      <recent name="C:\PythonHomework\Taxi\docs" />
+      <recent name="C:\PythonHomework\Taxi\app\entity" />
+      <recent name="C:\PythonHomework\Taxi\app\database" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PythonHomework\Taxi\toxexample" />
+      <recent name="C:\PythonHomework\Taxi\app" />
+      <recent name="C:\PythonHomework\Taxi\toxexample\requirements" />
+      <recent name="C:\PythonHomework\Taxi\app\database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manage">
+    <configuration name="deactivate" type="BatchConfigurationType" factoryName="Batch" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\PythonHomework\Taxi\venv\Scripts" />
+      <option name="PARENT_ENVS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="deactivate.bat" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Taxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\PythonHomework\Taxi\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\PythonHomework\Taxi\toxexample\manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_api.py" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="Taxi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\PythonHomework\Taxi\app\venv_test\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_api.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Batch.deactivate" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python tests.pytest in test_api.py" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Batch.deactivate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="073b7afb-a200-4a19-affc-1d67959af086" name="Default Changelist" comment="" />
+      <created>1609402062275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609402062275</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="382" y="255" width="1092" height="882" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609704896568">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="382" y="255" width="1092" height="882" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609704896568" />
+    <state x="92" y="92" width="1673" height="1016" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1609687266951">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="92" y="92" width="1673" height="1016" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609687266951" />
+    <state x="690" y="402" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609607880307">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="690" y="402" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609607880307" />
+    <state x="658" y="347" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609613481395">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="658" y="347" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609613481395" />
+    <state x="708" y="355" key="FileChooserDialogImpl" timestamp="1609705245051">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="708" y="355" key="FileChooserDialogImpl/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609705245051" />
+    <state width="1836" height="444" key="GridCell.Tab.0.bottom" timestamp="1609756928887">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="444" key="GridCell.Tab.0.bottom/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756928887" />
+    <state width="1836" height="444" key="GridCell.Tab.0.center" timestamp="1609756928887">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="444" key="GridCell.Tab.0.center/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756928887" />
+    <state width="1836" height="444" key="GridCell.Tab.0.left" timestamp="1609756928887">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="444" key="GridCell.Tab.0.left/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756928887" />
+    <state width="1836" height="444" key="GridCell.Tab.0.right" timestamp="1609756928887">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="444" key="GridCell.Tab.0.right/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756928887" />
+    <state width="1836" height="346" key="GridCell.Tab.1.bottom" timestamp="1609756515309">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="346" key="GridCell.Tab.1.bottom/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756515309" />
+    <state width="1836" height="346" key="GridCell.Tab.1.center" timestamp="1609756515309">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="346" key="GridCell.Tab.1.center/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756515309" />
+    <state width="1836" height="346" key="GridCell.Tab.1.left" timestamp="1609756515309">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="346" key="GridCell.Tab.1.left/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756515309" />
+    <state width="1836" height="346" key="GridCell.Tab.1.right" timestamp="1609756515309">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="1836" height="346" key="GridCell.Tab.1.right/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609756515309" />
+    <state x="429" y="245" key="SettingsEditor" timestamp="1609703723677">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="429" y="245" key="SettingsEditor/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609703723677" />
+    <state width="936" height="608" key="XDebugger.FullValuePopup" timestamp="1609711399747">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state width="936" height="608" key="XDebugger.FullValuePopup/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609711399747" />
+    <state x="591" y="265" width="672" height="678" key="search.everywhere.popup" timestamp="1609618375328">
+      <screen x="0" y="0" width="1857" height="1200" />
+    </state>
+    <state x="591" y="265" width="672" height="678" key="search.everywhere.popup/-1920.0.1238.720/0.0.1857.1200@0.0.1857.1200" timestamp="1609618375328" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/manage.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/manage.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/database/models.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/database/models.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/database/models.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/config.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/config.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/database/manage_orders.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/database/manage_orders.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/application/view.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>134</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="183" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="184" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="188" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="190" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="201" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/manage_drivers.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="202" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="203" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="204" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="206" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="211" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/app/entity/controllers.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="212" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="216" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_api.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="217" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
