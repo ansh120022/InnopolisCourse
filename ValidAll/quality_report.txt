@@ -1,0 +1,7 @@
+flake8 main.py decorator.py exceptions.py > quality_report.txt
+
+main.py:26:26: W605 invalid escape sequence '\s'
+main.py:26:34: W605 invalid escape sequence '\s'
+main.py:26:36: W605 invalid escape sequence '\d'
+main.py:36:80: E501 line too long (87 > 79 characters)
+exceptions.py:27:80: E501 line too long (87 > 79 characters)
