@@ -12,7 +12,7 @@ class Backpack:
 
     def print_backpack(self) -> None:
         """Печать содержимого рюкзака."""
-        print(self.backpack)
+        print (f"В рюкзаке {self.backpack}")
 
     def print_backpack_after_fight(self)-> None:
         """Более подробная печать содержимого рюкзака после битвы."""
@@ -38,7 +38,7 @@ class Backpack:
             del available_tools['Тотем']
         return available_tools
 
-    def update_backpack(self, tool, enemy_health) -> None:
+    def update_backpack(self, tool, enemy_health) -> int:
         """
         Обновление содержимого рюкзака после битвы.
         Сила оружия уменьшается на значение кол-ва жизней противника.
@@ -48,5 +48,10 @@ class Backpack:
         for key, value in self.backpack.copy().items():
             if key == tool and value > enemy_health:
                 self.backpack[key] = value - enemy_health
+                return 0
             if key == tool and value <= enemy_health:
                 del self.backpack[key]
+                return 0
+            if key == 'Тотем':
+                del self.backpack[key]
+                return 0

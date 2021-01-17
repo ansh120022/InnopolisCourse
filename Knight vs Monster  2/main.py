@@ -1,6 +1,7 @@
 """В этом файле реализован паттерн Стратегия и основной функционал игры."""
 
 from __future__ import annotations
+from memento import Caretaker
 
 import sys
 from gamers_builder import Director, HeroBuilder, MonsterBuilder
@@ -10,26 +11,16 @@ from magic_tools_factory import generate_magic_tool
 from abc import ABC, abstractmethod
 from validation import valid_input
 
+
 GamerBuilder = HeroBuilder()
 director = Director()
 
 director.set_builder(HeroBuilder)
 Hero = director.get_gamer()
 print("Создан герой c параметрами:")
-Hero.specification()
-print("В рюкзаке у героя:")
+Hero.print_specification()
 Hero.backpack.print_backpack()
 print("\nНачало игры.............\n")
-
-
-def save_memento():
-    """Заглушка."""
-    return 0
-
-
-def restore_memento()-> None:
-    """Заглушка."""
-    return 0
 
 
 def event_apple(apple_power) -> None:
@@ -122,10 +113,10 @@ class Defense(Strategy):
     """Конкретная стратгия Защищаться."""
 
     def do_algorithm(self, monster_power) -> None:
-        """Конкретная стратгия Защищаться."""
+        """Конкретная стратегия Защищаться."""
         print("<:::::[]=¤ Монстр нанёс удар")
         sleep(1)
-        print(f"Использована защита типа {Hero.gamer_type} c силой {Hero.power}")
+        print(f"Использована защита типа {Hero._gamer_type} c силой {Hero.power}")
         sleep(1)
         if Hero.power < monster_power:
             monster_power = monster_power - Hero.power
@@ -142,7 +133,15 @@ class Ignore(Strategy):
     def do_algorithm(self, monster_power) -> None:
         """Конкретная стратгия Пройти мимо."""
         print("....Да, в другой раз....\n")
-        sleep(1)
+
+
+class CreateSnapshot(Strategy):
+    """Конкретная стратегия cохранения состояния при подборе тотема."""
+
+    def do_algorithm(self, monster_power) -> int:
+        """Общая функция."""
+        caretaker.backup()
+        Hero.backpack.add_to_backpack({"Тотем": 1})
 
 
 class RestoreSnapshot(Strategy):
@@ -150,16 +149,17 @@ class RestoreSnapshot(Strategy):
 
     def do_algorithm(self, monster_power) -> int:
         """Общая функция."""
-        #Hero.backpack = Memento.get_backpack()
-        Hero.specification()
-        return 0
+        caretaker.undo()
+        Hero.backpack.update_backpack('Тотем', 1)
+        print(Hero.print_specification())
 
 
 # ------------------------------------------Конец стратегии ------------------------------------#
+caretaker = Caretaker(originator=Hero)
 
 def generate_random_events() -> None:
     """Инициализация случайных событий и то, что происходит с каждым событием."""
-    while Hero.killed_enemies <= 10 and Hero.is_alive():
+    while Hero._killed_enemies <= 10 and Hero.is_alive():
         options = ['Магический предмет', 'Монстр']
         event = random.choice(options)
         if event == 'Магический предмет':
@@ -171,10 +171,8 @@ def generate_random_events() -> None:
             b = input(f"\nТы видишь {tool}\n 1 - Взять, 2 - Пройти мимо\n")
             if valid_input(b):
                 if b == '1' and 'Тотем' in tool:
-                    # Hero.save_memento()
-                    save_memento()
-                    sleep(1)
-                    Hero.backpack.add_to_backpack({"Тотем": 1})
+                    context = Context(CreateSnapshot)
+                    context.do_some_business_logic(b)
                     continue
                 if b == '1':
                     Hero.backpack.add_to_backpack(tool)
@@ -188,7 +186,7 @@ def generate_random_events() -> None:
         else:
             Monster = generateMonster()
             print(f"\nТы видишь монстра с силой {Monster.power}")
-            Monster.specification()
+            Monster.print_specification()
             b = input("\n 1 - Сражаться, 2 - Пройти мимо\n")
             while not valid_input(b):
                 b = input("\n 1 - Сражаться, 2 - Пройти мимо\n")
@@ -199,19 +197,19 @@ def generate_random_events() -> None:
                         chosen_tool = ()
                         chosen_tool = choose_tool_to_fight()
                         if chosen_tool == 'Оружия нет':
-                            print("""Но у тебя нет оружия. Игра окончена.
+                            print("""Но у тебя нет доступного оружия. Игра окончена.
                                                                                   o╮༼ • ̯ • ༽╭o͡͡͡""")
                             if 'Тотем' in Hero.backpack.get_backpack():
                                 b = input("У тебя есть тотем. Использовать его? 1 - Да, 2 - Нет\n")
                                 if valid_input(b):
                                     if b == '1':
-                                        # context = Context(RestoreSnapshot())
-                                        # context.do_some_business_logic('f')
-                                        restore_memento()
+                                        context = Context(RestoreSnapshot)
+                                        context.do_some_business_logic(b)
+                                        continue
                             else:
                                 sys.exit()
                             continue
-                        if Hero.gamer_type == Monster.gamer_type:
+                        if Hero._gamer_type == Monster._gamer_type:
                             context = Context(Defense())
                             context.do_some_business_logic(Monster.power)
                         else:
@@ -230,16 +228,18 @@ def generate_random_events() -> None:
                                 b = input("У тебя есть тотем. Использовать его и продолжить игру? 1 - Да, 2 - Нет\n")
                                 if valid_input(b):
                                     if b == 1:
-                                        restore_memento()
+                                        context = Context(RestoreSnapshot)
+                                        context.do_some_business_logic(b)
+                                        continue
                             else:
                                 sys.exit()
                         if not Monster.is_alive():
                             Hero.count_killed_enemies()
-                            print(f"Хороший удар! Количество убитых монстров: {Hero.killed_enemies}\n")
+                            print(f"Хороший удар! Количество убитых монстров: {Hero._killed_enemies}\n")
                             sleep(1)
                             Hero.backpack.print_backpack_after_fight()
                             sleep(1)
-                            print(f"Осталось жизней: {Hero.health}")
+                            print(f"Осталось жизней: {Hero._health}")
                             sleep(1)
                             print("Игра продолжается")
                             sleep(1)
@@ -247,7 +247,7 @@ def generate_random_events() -> None:
                     context = Context(Ignore())
                     context.do_some_business_logic('f')
                     continue
-    if Hero.killed_enemies >= 10:
+    if Hero._killed_enemies >= 10:
         print(""" Победа. Игра окончена
                                  ∩༼˵☯‿☯˵༽つ¤=[]:::::>    """)
         sys.exit()

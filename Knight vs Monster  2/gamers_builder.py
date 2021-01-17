@@ -2,6 +2,7 @@ from backpack import Backpack
 from gamer_types_factory import ArcherFactory, WizardFactory, WarriorFactory
 import random
 from validation import valid_input
+from memento import Memento, ConcreteMemento
 
 
 class Director:
@@ -17,58 +18,69 @@ class Director:
         gamer = Gamer()
         gamer.health = self.__builder.get_health(self)
         gamer.power = self.__builder.get_power(self)
+        gamer.backpack = self.__builder.get_backpack(self)
         gamer_type = self.__builder.get_gamer_type(self)
         gamer.set_gamer_type(gamer_type)
+
 
         return gamer
 
 
 class Gamer:
     """Постройка игрока."""
-    def __init__(self, killed_enemies=0):
-        self.backpack = Backpack()
-        self.killed_enemies = killed_enemies
+    def __init__(self, killed_enemies=0, gamer_type=''):
+        self._killed_enemies = killed_enemies
+        self._backpack = Backpack()
         self.power = 0
-        self.health = random.randint(1, 10)
+        self._gamer_type = gamer_type
+        self._health = random.randint(1, 10)
 
     def count_killed_enemies(self) -> int:
-        self.killed_enemies += 1
+        self._killed_enemies += 1
 
     def set_gamer_type(self, gamer_type) -> str:
-        self.gamer_type = gamer_type
+        self._gamer_type = gamer_type
 
-    def set_health(self, health)  -> int:
-        self.health = health
+    def setpower(self, power) -> int:
+        self.power = power
 
-    def specification(self)  -> None:
-        print(f"Раса - {self.gamer_type}")
-        print(f"Жизней {self.health}")
+    def set_backpack(self) -> int:
+        self._backpack = Backpack().get_backpack()
 
-    def update_health(self, enemy_tool_power: int) -> bool:
-        self.health = self.health - int(enemy_tool_power)
+    def set_health(self, health) -> int:
+        self._health = health
+
+    def print_specification(self) -> None:
+        print(f"Раса - {self._gamer_type}")
+        print(f"Жизней {self._health}")
+
+    def update_health(self, enemy_toolpower: int) -> bool:
+        self._health = self._health - int(enemy_toolpower)
         self.is_alive()
 
     def is_alive(self) -> bool:
-        if self.health <= 0:
+        if self._health <= 0:
             return False
         else:
             return True
 
-    def save_memento(self) -> None:
+    def save(self) -> Memento:
         """
-        Тотем сохраняет состояние.
+        Сохраняет текущее состояние внутри снимка.
         """
-        print("Сохранено текущее состояние")
+        return ConcreteMemento(self._health, self._killed_enemies, self._gamer_type, self._backpack.get_backpack().copy())
 
-        #return Memento(self.health, self.killed_enemies, self.backpack)
+    def restore(self, memento: Memento) -> None:
+        """
+        Восстанавливает состояние Создателя из объекта снимка.
+        """
 
-    def restore_memento(self) -> None:
-        """
-        Тотем восстанавливает состояние.
-        """
-        # self.health = Memento.get_health()
-        # self.killed_enemies = Memento.get_killed_enemies()
-        # self.backpack = Memento.get_backpack()
+        self._health = memento.get_health()
+        self._killed_enemies = memento.get_killed_enemies()
+        self._gamer_type = memento.get_gamer_type()
+        self.power = memento.get_power()
+        self._backpack = memento.get_backpack()
+        print(f"Восстановлено состояние из тотема ")
 
 
 class Builder:
@@ -77,11 +89,13 @@ class Builder:
 
     def get_gamer_type(self) -> None: pass
 
-    def get_backpack(self) -> None: pass
+    def get_backpack(self) -> dict: pass
 
     def get_killed_enemies(self) -> None: pass
 
-    def get_is_alive(self) -> None : pass
+    def get_power(self) -> None: pass
+
+    def get_is_alive(self) -> None: pass
 
 
 class HeroBuilder(Builder):
@@ -98,18 +112,23 @@ class HeroBuilder(Builder):
         return self.gamer_type
 
     def get_power(self):
-        self.power = random.randint(1, 20)  # сила защиты
+        """Сила защиты."""
+        self.power = random.randint(1, 20)
         return self.power
+
+    def get_backpack(self):
+        backpack = Backpack()
+        return backpack
 
 
 class MonsterBuilder(Builder):
 
     def get_health(self):
-        self.health = random.randint(10, 20)
+        self.health = random.randint(1, 20)
         return self.health
 
-    def update_health(self, hit_power: int) -> int:
-        self.health = self.health - hit_power
+    def update_health(self, hitpower: int) -> int:
+        self.health = self.health - hitpower
         return self.health
 
     def get_power(self):
