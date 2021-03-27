@@ -1,0 +1,343 @@
+>radon mi -m
+
+backpack.py - A
+gamers_builder.py - A
+gamer_types_factory.py - A
+magic_tools_factory.py - A
+main.py
+    ERROR: 'charmap' codec can't decode byte 0x98 in position 4469: character maps to <undefined>
+snapshot.py - A
+tests.py - A
+validation.py - A
+
+
+>mypy . --disallow-untyped-calls --disallow-untyped-defs --disallow-incomplete-defs --check-untyped-defs  --disallow-untyped-decorators --ignore-missing-imports --pretty > add.txt
+
+
+backpack.py:5: error: The return type of "__init__" must be None
+        def __init__(self, backpack={'���': 10}) -> object:
+        ^
+backpack.py:5: error: Function is missing a type annotation for one or more
+arguments
+        def __init__(self, backpack={'���': 10}) -> object:
+        ^
+backpack.py:5: error: Missing return statement
+        def __init__(self, backpack={'���': 10}) -> object:
+        ^
+backpack.py:40: error: Function is missing a type annotation for one or more
+arguments
+        def update_backpack(self, tool, enemy_health) -> None:
+        ^
+magic_tools_factory.py:17: error: "None" has no attribute "set_tool_attrs"
+            result = tool.set_tool_attrs()
+                     ^
+magic_tools_factory.py:23: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:29: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:35: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:41: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:47: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:53: error: Return type "MagicTool" of "factory_method"
+incompatible with return type "None" in supertype "Creator"
+        def factory_method(self) -> MagicTool:
+        ^
+magic_tools_factory.py:73: error: Incompatible return value type (got
+"Dict[str, int]", expected "str")
+            return tool
+                   ^
+magic_tools_factory.py:83: error: Incompatible return value type (got
+"Dict[str, int]", expected "str")
+            return tool
+                   ^
+magic_tools_factory.py:87: error: Return type "Dict[Any, Any]" of
+"set_tool_attrs" incompatible with return type "str" in supertype "MagicTool"
+        def set_tool_attrs(self) -> dict:
+        ^
+magic_tools_factory.py:96: error: Return type "Dict[Any, Any]" of
+"set_tool_attrs" incompatible with return type "str" in supertype "MagicTool"
+        def set_tool_attrs(self) -> dict:
+        ^
+magic_tools_factory.py:111: error: Return type "Dict[Any, Any]" of
+"set_tool_attrs" incompatible with return type "str" in supertype "MagicTool"
+        def set_tool_attrs(self) -> dict:
+        ^
+magic_tools_factory.py:131: error: Cannot instantiate abstract class 'Creator'
+with abstract attribute 'factory_method'
+        created_tool = type_to_factory_mapping[random_choice]().some_set_t...
+                       ^
+gamer_types_factory.py:12: error: Function is missing a type annotation for one
+or more arguments
+        def update_health(self, lost_health) -> None:
+        ^
+gamer_types_factory.py:23: error: Return type "str" of "use_protection"
+incompatible with return type "None" in supertype "GamerType"
+        def use_protection(self) -> str:
+        ^
+gamer_types_factory.py:35: error: Return type "str" of "use_protection"
+incompatible with return type "None" in supertype "GamerType"
+        def use_protection(self) -> str:
+        ^
+gamer_types_factory.py:47: error: Return type "str" of "use_protection"
+incompatible with return type "None" in supertype "GamerType"
+        def use_protection(self)  -> str:
+        ^
+gamer_types_factory.py:64: error: Return type "object" of "create_GamerType"
+incompatible with return type "None" in supertype "GamerTypeFactory"
+        def create_GamerType(self) -> object:
+        ^
+gamer_types_factory.py:71: error: Return type "object" of "create_GamerType"
+incompatible with return type "None" in supertype "GamerTypeFactory"
+        def create_GamerType(self)-> object:
+        ^
+gamer_types_factory.py:78: error: Return type "object" of "create_GamerType"
+incompatible with return type "None" in supertype "GamerTypeFactory"
+        def create_GamerType(self)-> object:
+        ^
+tests.py:8: error: Function is missing a return type annotation
+        def test_calculate(self):
+        ^
+tests.py:8: note: Use "-> None" if function does not return a value
+gamers_builder.py:2: error: Module 'snapshot' has no attribute 'Memento'
+    from snapshot import Memento
+    ^
+gamers_builder.py:11: error: Function is missing a type annotation
+        def set_builder(self, builder):
+        ^
+gamers_builder.py:14: error: Function is missing a return type annotation
+        def get_gamer(self):
+        ^
+gamers_builder.py:15: error: Call to untyped function "Gamer" in typed context
+            gamer = Gamer()
+                    ^
+gamers_builder.py:16: error: Item "None" of "Optional[Any]" has no attribute
+"get_health"
+            gamer.health = self.__builder.get_health(self)
+                           ^
+gamers_builder.py:17: error: Item "None" of "Optional[Any]" has no attribute
+"get_power"
+            gamer.power = self.__builder.get_power(self)
+                          ^
+gamers_builder.py:18: error: Item "None" of "Optional[Any]" has no attribute
+"get_gamer_type"
+            gamer_type = self.__builder.get_gamer_type(self)
+                         ^
+gamers_builder.py:25: error: Function is missing a type annotation
+        def __init__(self, killed_enemies=0):
+        ^
+gamers_builder.py:31: error: Missing return statement
+        def count_killed_enemies(self) -> int:
+        ^
+gamers_builder.py:34: error: Function is missing a type annotation for one or
+more arguments
+        def set_gamer_type(self, gamer_type) -> str:
+        ^
+gamers_builder.py:34: error: Missing return statement
+        def set_gamer_type(self, gamer_type) -> str:
+        ^
+gamers_builder.py:37: error: Function is missing a type annotation for one or
+more arguments
+        def set_health(self, health)  -> int:
+        ^
+gamers_builder.py:37: error: Missing return statement
+        def set_health(self, health)  -> int:
+        ^
+gamers_builder.py:44: error: Missing return statement
+        def update_health(self, enemy_tool_power: int) -> bool:
+        ^
+gamers_builder.py:86: error: Function is missing a type annotation for one or
+more arguments
+        def get_health(self, health=10) -> int:
+        ^
+gamers_builder.py:86: error: Signature of "get_health" incompatible with
+supertype "Builder"
+        def get_health(self, health=10) -> int:
+        ^
+gamers_builder.py:89: error: Return type "int" of "get_killed_enemies"
+incompatible with return type "None" in supertype "Builder"
+        def get_killed_enemies(self) -> int:
+        ^
+gamers_builder.py:93: error: Return type "str" of "get_gamer_type" incompatible
+with return type "None" in supertype "Builder"
+        def get_gamer_type(self) -> str:
+        ^
+gamers_builder.py:94: error: Argument 1 to "get_type" of "GamerType" has
+incompatible type "HeroBuilder"; expected "GamerType"
+            self.gamer_type = GamerType.get_type(self, set_hero_type())
+                                                 ^
+gamers_builder.py:97: error: Function is missing a return type annotation
+        def get_power(self):
+        ^
+gamers_builder.py:104: error: Function is missing a return type annotation
+        def get_health(self):
+        ^
+gamers_builder.py:112: error: Function is missing a return type annotation
+        def get_power(self):
+        ^
+gamers_builder.py:116: error: Return type "str" of "get_gamer_type"
+incompatible with return type "None" in supertype "Builder"
+        def get_gamer_type(self) -> str:
+        ^
+gamers_builder.py:117: error: Argument 1 to "get_type" of "GamerType" has
+incompatible type "MonsterBuilder"; expected "GamerType"
+            self.gamer_type = GamerType.get_type(self, set_monster_type())
+                                                 ^
+gamers_builder.py:135: error: Function is missing a return type annotation
+        def __init__(self):
+        ^
+gamers_builder.py:135: note: Use "-> None" if function does not return a value
+gamers_builder.py:138: error: Function is missing a type annotation for one or
+more arguments
+        def get_type(self, z) -> str:
+        ^
+gamers_builder.py:166: error: Cannot instantiate abstract class
+'GamerTypeFactory' with abstract attribute 'create_GamerType'
+        type = type_to_factory_mapping[user_choice()]()
+               ^
+gamers_builder.py:167: error: Incompatible return value type (got
+"GamerTypeFactory", expected "str")
+        return type
+               ^
+gamers_builder.py:172: error: Cannot instantiate abstract class
+'GamerTypeFactory' with abstract attribute 'create_GamerType'
+        type = type_to_factory_mapping[random_monster]()
+               ^
+gamers_builder.py:173: error: Incompatible return value type (got
+"GamerTypeFactory", expected "str")
+        return type
+               ^
+main.py:12: error: Module 'snapshot' has no attribute 'Memento'
+    from snapshot import Memento
+    ^
+main.py:17: error: Call to untyped function "set_builder" in typed context
+    director.set_builder(HeroBuilder)
+    ^
+main.py:18: error: Call to untyped function "get_gamer" in typed context
+    Hero = director.get_gamer()
+           ^
+main.py:26: error: Function is missing a return type annotation
+    def save_memento():
+    ^
+main.py:33: error: No return value expected
+        return 0
+        ^
+main.py:36: error: Function is missing a type annotation for one or more
+arguments
+    def event_apple(apple_power) -> None:
+    ^
+main.py:43: error: Missing return statement
+    def choose_tool_to_fight() -> tuple:
+    ^
+main.py:56: error: Incompatible return value type (got "str", expected
+"Tuple[Any, ...]")
+            return ("������ ���")
+                    ^
+main.py:91: error: Function is missing a type annotation for one or more
+arguments
+        def do_some_business_logic(self, monster_power) -> None:
+        ^
+main.py:96: error: Too many arguments for "do_algorithm" of "Strategy"
+            self._strategy.do_algorithm(monster_power)
+            ^
+main.py:116: error: Function is missing a type annotation for one or more
+arguments
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:116: error: Signature of "do_algorithm" incompatible with supertype
+"Strategy"
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:128: error: Function is missing a type annotation for one or more
+arguments
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:128: error: Signature of "do_algorithm" incompatible with supertype
+"Strategy"
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:145: error: Function is missing a type annotation for one or more
+arguments
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:145: error: Signature of "do_algorithm" incompatible with supertype
+"Strategy"
+        def do_algorithm(self, monster_power) -> None:
+        ^
+main.py:153: error: Function is missing a type annotation for one or more
+arguments
+        def do_algorithm(self, monster_power) -> int:
+        ^
+main.py:153: error: Signature of "do_algorithm" incompatible with supertype
+"Strategy"
+        def do_algorithm(self, monster_power) -> int:
+        ^
+main.py:169: error: Invalid index type "str" for "str"; expected type
+"Union[int, slice]"
+                    apple_power = tool['�������']
+                                       ^
+main.py:176: error: Call to untyped function "save_memento" in typed context
+                        save_memento()
+                        ^
+main.py:191: error: "object" has no attribute "power"
+                print(f"\n�� ������ ������� � ����� {Monster.power}")
+                      ^
+main.py:192: error: "object" has no attribute "specification"
+                Monster.specification()
+                ^
+main.py:199: error: "object" has no attribute "is_alive"
+                        while Monster.is_alive() and Hero.is_alive():
+                              ^
+main.py:201: error: Incompatible types in assignment (expression has type
+"Tuple[Any, ...]", variable has type "Tuple[]")
+                            chosen_tool = choose_tool_to_fight()
+                                          ^
+main.py:215: error: "object" has no attribute "gamer_type"
+                            if Hero.gamer_type == Monster.gamer_type:
+                                                  ^
+main.py:217: error: "object" has no attribute "power"
+    ...                         context.do_some_business_logic(Monster.power)
+                                                               ^
+main.py:220: error: "object" has no attribute "power"
+    ...                         context.do_some_business_logic(Monster.power)
+                                                               ^
+main.py:221: error: Tuple index out of range
+    ...                   Hero.backpack.update_backpack(chosen_tool[0], Monst...
+                                                        ^
+main.py:221: error: "object" has no attribute "health"
+    ...         Hero.backpack.update_backpack(chosen_tool[0], Monster.health)
+                                                              ^
+main.py:222: error: "object" has no attribute "update_health"
+                            Monster.update_health(chosen_tool[1])
+                            ^
+main.py:222: error: Tuple index out of range
+                            Monster.update_health(chosen_tool[1])
+                                                  ^
+main.py:223: error: "object" has no attribute "is_alive"
+                            if Monster.is_alive():
+                               ^
+main.py:224: error: "object" has no attribute "health"
+                                print(f"������ �� ��� ���, � ���� �������...
+                                      ^
+main.py:237: error: "object" has no attribute "is_alive"
+                            if not Monster.is_alive():
+                                   ^
+main.py:259: error: Call to untyped function "set_builder" in typed context
+        director.set_builder(MonsterBuilder)
+        ^
+main.py:260: error: Call to untyped function "get_gamer" in typed context
+        Monster = director.get_gamer()
+                  ^
+Found 91 errors in 6 files (checked 8 source files)
