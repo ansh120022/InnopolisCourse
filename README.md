@@ -1,2 +1,3 @@
 # InnopolisCourse
-Домашние работы и задания с семинаров из курса по автоматизированному тестированию.
+
+Homeworks from Automated testing course
